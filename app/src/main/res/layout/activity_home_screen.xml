@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:soundEffectsEnabled="false"
+    tools:context=".home.HomeScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.number.generator.GradientTextView
+            android:id="@+id/txt_generator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kaushan_script"
+            android:gravity="center"
+            android:text="@string/txt_splash_screen"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryColor"
+
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_generator"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_generate"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_generate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="25dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/bg_blue"
+            android:paddingHorizontal="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/generate"
+            android:textAllCaps="false"
+            android:layout_below="@id/text_num"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

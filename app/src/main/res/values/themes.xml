@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="Base.Theme.Generator" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.Generator" parent="Base.Theme.Generator" />
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/primaryColorDark</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="CustomEditText" parent="">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorControlActivated">@color/primaryColor</item>
+    </style>
+
+    <style name="ContinueBtnDisabled" parent="">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="ContinueBtnEnabled" parent="">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomAlert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_alert_dialog</item>
+    </style>
+</resources>
